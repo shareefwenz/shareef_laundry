@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f2f6fb; color: #1f2d3d; }
+header { background: #0b6fb3; color: #fff; padding: 14px 24px; }
+header h1 { margin: 0 0 10px; font-size: 1.4rem; }
+nav button { background: transparent; color: #cfe8fb; border: 0; padding: 8px 14px; cursor: pointer; font-size: 1rem; border-radius: 6px; }
+nav button.active, nav button:hover { background: #fff; color: #0b6fb3; }
+main { max-width: 1100px; margin: 20px auto; padding: 0 16px; }
+.tab { display: none; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+.tab.active { display: block; }
+h2 { margin-top: 0; color: #0b6fb3; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+.card { background: #eaf4fc; border-radius: 10px; padding: 18px; text-align: center; }
+.card span { font-size: 2rem; font-weight: 700; color: #0b6fb3; }
+.card p { margin: 6px 0 0; }
+.hint { margin-top: 20px; color: #5b6b7b; }
+.form-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; align-items: center; }
+input, select { padding: 8px 10px; border: 1px solid #b8c6d4; border-radius: 6px; font-size: .95rem; }
+.search { width: 100%; margin-bottom: 12px; }
+button { background: #0b6fb3; color: #fff; border: 0; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: .95rem; }
+button.secondary { background: #6c7a89; }
+button.danger { background: #d64545; }
+button.small { padding: 4px 8px; font-size: .8rem; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 9px 8px; border-bottom: 1px solid #e3eaf1; font-size: .92rem; }
+th { background: #f2f6fb; }
+.item-row { display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.badge { padding: 3px 8px; border-radius: 12px; font-size: .8rem; background: #e3eaf1; }
+.badge.Delivered { background: #c9f0d4; }
+.badge.Ready { background: #fff1b8; }
+footer { text-align: center; color: #7a8896; padding: 20px; }
+@media (max-width: 700px) { table { display: block; overflow-x: auto; } }
